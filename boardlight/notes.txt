@@ -1,0 +1,22 @@
+Email found : info@board.htb
+we know it is php
+
+it has a subdomain: crm.board.htb
+Dolibarr 17.0.0
+admin:admin works - but it is not a admin user. 
+i was also able to find a Dolibar 17.0.0 exploit : https://github.com/nikn0laty/Exploit-for-Dolibarr-17.0.0-CVE-2023-30253.git
+
+
+
+file: /var/www/html/crm.board.htb/htdcos/conf/conf.php
+
+$dolibarr_main_db_name='dolibarr';
+$dolibarr_main_db_prefix='llx_';
+$dolibarr_main_db_user='dolibarrowner';
+$dolibarr_main_db_pass='serverfun2$2023!!';
+$dolibarr_main_db_type='mysqli';
+$dolibarr_main_db_character_set='utf8';
+$dolibarr_main_db_collation='utf8_unicode_ci';
+// Authentication settings
+$dolibarr_main_authentication='dolibarr';
+
