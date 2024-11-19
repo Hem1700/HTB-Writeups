@@ -20,3 +20,6 @@ $dolibarr_main_db_collation='utf8_unicode_ci';
 // Authentication settings
 $dolibarr_main_authentication='dolibarr';
 
+
+Also found out about enlightenment. 
+https://github.com/MaherAzzouzi/CVE-2022-37706-LPE-exploit
